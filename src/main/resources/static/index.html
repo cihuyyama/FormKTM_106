@@ -1,15 +1,83 @@
 <!DOCTYPE html>
 <!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Form KTM</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            #fs{
+                background-color: #98bbdd;
+                display: inline-block;
+            }
+            h1{
+                color: #007146;
+                font: 10px;
+                margin: 15px 0px 0px 20px;
+                padding: 0px 0px 0px 15px;
+            }
+        </style>
     </head>
     <body>
-        <div>TODO write content</div>
+        <img src="umy.png" style="float: left" />
+        <h1 align="right">FORMULIR</h1>
+        <br/>    
+        <hr/>
+        <div id="hero" class="site-hero" style="background-image: url(https://www.umy.ac.id/wp-content/uploads/2019/07/Prodi.png); margin-bottom: 25px; height: 100px;">
+			<div class="site-hero-caption">
+				<div class="container">
+					<h2 class="site-hero-title">FORM KTM</h2>
+				</div>
+			</div>
+        </div>
+        <center>
+        <form action="/getinto" method="POST" enctype="multipart/form-data">
+            <fieldset id="fs" style="width: 350px; box-shadow: 3px 3px 5px rgba(0,0,0,0.4)">
+                <p style="float: left">
+                    <label>Nama &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;: </label>
+                    <input type="text" name="name"/>
+                </p>
+                <br/>
+                <p style="float: left">
+                    <label>NIM &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;: </label>
+                    <input type="text" name="nim"/>
+                </p>
+                <br/>
+                <p style="float: left">
+                    <label>Tempat Lahir : </label>
+                    <input type="text" name="locate"/>
+                </p>
+                </br>
+                <p style="float: left">
+                    <label>Tanggal Lahir : </label>
+                    <input type="date" name="date"/>
+                </p>
+                </br>
+                <p style="float: left">
+                    <label>Jurusan &ensp;&ensp;&ensp;&ensp;&ensp;: </label>
+                    <input type="text" name="major"/>
+                </p>
+                </br>
+                <p style="float: left">
+                    <label>Email UMY &ensp;: </label>
+                    <input type="text" name="email"/>
+                </p>
+                </br>
+                <p style="float: left">
+                    <label style="float: left">Pilih Gambar : </label>
+                    <input type="file" name="img" accept="image/*" class="form-control-file"/>
+                </p>
+                <br/>
+                <p style="float: right">
+                    <input type="submit" value="SAVE" style="width: 100px; height: 30px; font-size: 15pt; color: white; background-color: #0088D8"/>
+                </p>
+            </fieldset>
+            
+        </form>
+        </center>
     </body>
 </html>
